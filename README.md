@@ -2,6 +2,6 @@
 
 Phone-friendly automatic talking-head video editor. Upload a recording, automatically assemble retained takes, review and export MP4.
 
-Python 3.12, FastAPI, FFmpeg and faster-whisper. Deploy using Dockerfile with a persistent volume at /data and a random QUICKCUT_TOKEN secret of at least 24 characters. One replica only.
+Deploy using Dockerfile with persistent storage at /data and a private QUICKCUT_TOKEN secret of at least 24 characters. One replica only. No videos or credentials belong in this repository.
 
-No video footage or credentials belong in this repository. Automatic take selection is heuristic and may need correction. Removed takes remain recoverable.
+Automatic take selection uses transcript matching and may need correction. Removed takes remain recoverable.
